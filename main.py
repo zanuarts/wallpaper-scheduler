@@ -1,5 +1,11 @@
 import ctypes
 import time
+import pywintypes
+from win10toast import ToastNotifier
+
+toast = ToastNotifier()
+toast.show_toast("Wallpaper Scheduler", "The process has been started", duration=15)
+os.chdir("F:\Python\wallpaper-scheduler")
 
 img1 = r"F:\Python\wallpaper-scheduler\img\1.jpg"
 img2 = r"F:\Python\wallpaper-scheduler\img\2.jpg"
@@ -10,28 +16,20 @@ img6 = r"F:\Python\wallpaper-scheduler\img\6.jpg"
 
 def get_time():
     time.sleep(1)
-    time_now = time.strftime("%H:%M:%S")
-    return time_now
+    now = time.strftime("%H:%M:%S")
+    return now
 
 while True:
     time_change = str(get_time())
-    if time_change >= "05:00:00":
-        print(time_change, "state 1")
+    if time_change == "05:00:00":
         ctypes.windll.user32.SystemParametersInfoW(20, 0, img1, 0)
-    elif time_change >= "08:00:00":
-        print(time_change, "state 2")
+    elif time_change == "08:00:00":
         ctypes.windll.user32.SystemParametersInfoW(20, 0, img2, 0)
-    elif time_change >= "10:00:00":
-        print(time_change, "state 3")
+    elif time_change == "10:00:00":
         ctypes.windll.user32.SystemParametersInfoW(20, 0, img3, 0)
-    elif time_change >= "12:00:00":
-        print(time_change, "state 4")
+    elif time_change == "12:00:00":
         ctypes.windll.user32.SystemParametersInfoW(20, 0, img4, 0)
-    elif time_change >= "16:00:00":
-        print(time_change, "state 5")
+    elif time_change == "16:00:00":
         ctypes.windll.user32.SystemParametersInfoW(20, 0, img5, 0)   
-    elif time_change >= "18:00:00":
-        print(time_change, "state 6")
+    elif time_change == "18:00:00":
         ctypes.windll.user32.SystemParametersInfoW(20, 0, img6, 0) 
-    else:
-        print(time_change)
