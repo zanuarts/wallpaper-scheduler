@@ -5,14 +5,13 @@ from win10toast import ToastNotifier
 
 toast = ToastNotifier()
 toast.show_toast("Wallpaper Scheduler", "The process has been started", duration=15)
-os.chdir("F:\Python\wallpaper-scheduler")
 
-img1 = r"F:\Python\wallpaper-scheduler\img\1.jpg"
-img2 = r"F:\Python\wallpaper-scheduler\img\2.jpg"
-img3 = r"F:\Python\wallpaper-scheduler\img\3.jpg"
-img4 = r"F:\Python\wallpaper-scheduler\img\4.jpg"
-img5 = r"F:\Python\wallpaper-scheduler\img\5.jpg"
-img6 = r"F:\Python\wallpaper-scheduler\img\6.jpg"
+img1 = r"D:\Python\wallpaper-scheduler\img\1.jpg"
+img2 = r"D:\Python\wallpaper-scheduler\img\2.jpg"
+img3 = r"D:\Python\wallpaper-scheduler\img\3.jpg"
+img4 = r"D:\Python\wallpaper-scheduler\img\4.jpg"
+img5 = r"D:\Python\wallpaper-scheduler\img\5.jpg"
+img6 = r"D:\Python\wallpaper-scheduler\img\6.jpg"
 
 def get_time():
     time.sleep(1)
