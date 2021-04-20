@@ -1,1 +1,1 @@
-CreateObject("Wscript.Shell").Run "F:\Python\wallpaper-scheduler\wallpaperScheduler.bat", 0, True
+CreateObject("Wscript.Shell").Run "C:\Users\Homestead\Documents\wallpaper-scheduler\wallpaperScheduler.bat", 0, True

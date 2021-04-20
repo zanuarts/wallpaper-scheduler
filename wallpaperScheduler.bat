@@ -1,5 +1,5 @@
 @echo off
 
-python F:\Python\wallpaper-scheduler\main.py
+python C:\Users\Homestead\Documents\wallpaper-scheduler\main.py
 
 @pause
