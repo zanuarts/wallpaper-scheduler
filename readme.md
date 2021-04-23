@@ -15,13 +15,15 @@ Automaton helper to change your wallpaper in different time.
 
 <hr>
 
-## Note
+## Notes
 
 <ul>
     <li>You can change your wallpaper for free</li>
     <li>You can set your time freely</li>
     <li>If you difficult to config the .vbs file simply watch this <a href="https://youtu.be/XWV9tatoPQI">video</a></li>
     <li>If you have getting error in pywintypes, simply see this <a href="https://stackoverflow.com/questions/42482739/importerror-no-system-module-pywintypes-pywintypes34-dll/65539116#65539116">topic</a></li>
+    <li>I don't take the responsibility of anything happen</li>
+    <li>Use debug.py to debug your code before saving it to main.py</li>
 </ul>
 
 <hr>
